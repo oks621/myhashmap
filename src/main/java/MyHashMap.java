@@ -2,10 +2,11 @@ package main.java;
 
 
 public class MyHashMap<K, V> {
-    private Node<K, V>[] hashTable = new Node[16];
+    private Node<K, V>[] hashTable ;
     private int size;
 
     public MyHashMap() {
+      hashTable = new Node[16];
     }
 
     public String toString() {
